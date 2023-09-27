@@ -1,4 +1,4 @@
-# co3ac4eb4beaf7074e12357b5
+This project was built during my completion of the Scrimba Frontend Dev course
 
 Warning: Vite enforces using jsx syntax inside jsx/tsx files, so it will complain about that. Solution: rename `.js` files to `.jsx` :)
 
