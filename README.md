@@ -1,6 +1,6 @@
-This project was built during my completion of the Scrimba Frontend Dev course
+<h2>This project was built during my completion of the Scrimba Frontend Dev course</h2>
 
-Warning: Vite enforces using jsx syntax inside jsx/tsx files, so it will complain about that. Solution: rename `.js` files to `.jsx` :)
+<br/>
 
 Quick start:
 
