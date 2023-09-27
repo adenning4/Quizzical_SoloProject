@@ -8,6 +8,7 @@ export default function App() {
   const [triviaData, setTriviaData] = React.useState([]);
   const [isSubmitted, setIsSubmitted] = React.useState(false);
 
+  // include sad path behavior
   React.useEffect(() => {
     if (start) {
       fetch("https://opentdb.com/api.php?amount=5&type=multiple")
@@ -75,6 +76,7 @@ export default function App() {
       },
     ];
 
+    // refactor/forEach?
     for (let i = 0; i < 3; i++) {
       answersIndexed.push({
         answerText: decode(triviaDataEntry.incorrect_answers[i]),
@@ -116,6 +118,7 @@ export default function App() {
     );
   });
 
+  // Refactor with dedicated components
   return (
     <main>
       {start ? (
