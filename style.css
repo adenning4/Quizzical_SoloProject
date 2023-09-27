@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #293264;
+    background: #F5F7FB;
+    font-family: Karla, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    font-family: Inter, sans-serif;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default
+}
+
+.introPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.introPageTitle {
+    margin: auto 0 0;
+}
+
+.introPageDescription {
+    font-family: inter;
+    font-weight: 400;
+    margin: 0.75em 0 1.5em;
+}
+
+.introPageButton {
+    background: #4D5B9E;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    color: #F5F7FB;
+    font-size: 1rem;
+    padding: 1em 3em;
+    margin-bottom: auto;
+}
+
+.gamePage {
+    padding: 30px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prompt {
+    border-bottom: 1px solid #DBDEF0;
+    padding: 0 0 0.625em;
+}
+
+.question {
+    font-size: 1rem;
+}
+
+.answer {
+    color: #293264;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    padding: 0.25rem 1rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.gameButton {
+    background: #4D5B9E;
+    color: #F5F7FB;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.7rem;
+    padding: 1em 2em;
+}
+
+.checkAnswersButton {
+    margin: 1.75em auto;
+}
+
+.unsubmittedUnselected {
+    background: #F5F7FB;
+    border: 0.8px solid #4D5B9E;
+}
+
+.unsubmittedSelected {
+    background: #D6DBF5;
+    border: none;
+}
+
+.submittedUnselected {
+    background: #F5F7FB;
+    opacity: 0.5;
+}
+
+.submittedCorrect {
+    background: #94D7A2;
+    border: none;
+}
+
+.submittedIncorrect {
+    background: #F8BCBC;
+    border: none;
+    opacity: 0.5;
+}
+
+.resultsPrompt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.resultsPrompt p {
+    margin-right: 1em;
+}
