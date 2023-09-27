@@ -1,10 +1,11 @@
 import React from "react";
 
 export default function Prompt(props) {
-  // refactor for simplicity/clarity?
+  // refactor for simplicity/clarity this is tightly coupled?
   // Changes the isSelected property for a selected answer
   // Resets other isSelected properties to false for the question
   function handleAnswerButtonClick(selectedAnswer) {
+    // too complicated to reset all of trivia data based on an answer click
     props.handleClick((prevTriviaData) => {
       return prevTriviaData.map((prompt) => {
         if (prompt.question === props.question) {
